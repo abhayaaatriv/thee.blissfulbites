@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>The Blissfull Bites</title><link id="bb-fonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Figtree:wght@500;600;700;800&family=Fraunces:ital,opsz,wght,SOFT,WONK@1,9..144,700,100,1&family=Poiret+One&display=swap"><style id="bb-css">/* Layout: breezy-blue hero with floating product cutouts -> flamingo wave band -> cream "baked in Delhi" -> beach-blue gingham menu of colour-tile cards -> flamingo "what others say" reel -> blue custom-order CTA -> navy footer. Single bright look by design (Hot Planet palette). */
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>The Blissfull Bites</title><script>window.BB_EMBED=1</script><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>The Blissfull Bites</title><link id="bb-fonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Figtree:wght@500;600;700;800&family=Fraunces:ital,opsz,wght,SOFT,WONK@1,9..144,700,100,1&family=Poiret+One&display=swap"><style id="bb-css">/* Layout: breezy-blue hero with floating product cutouts -> flamingo wave band -> cream "baked in Delhi" -> beach-blue gingham menu of colour-tile cards -> flamingo "what others say" reel -> blue custom-order CTA -> navy footer. Single bright look by design (Hot Planet palette). */
 :root{
   --blue:#3548C0; --blue-deep:#26338F; --sunny:#FDF196; --butter:#F3D985; --flamingo:#F19DAA; --flamingo-soft:#FBD9DE;
   --beach:#B9D1FB; --beach-soft:#E3EDFE; --navy:#1C2370; --cream:#FFFBF0; --white:#FFFFFF; --line:#DCE4F7;
@@ -168,6 +168,8 @@ section.block{padding-block:clamp(48px,7vw,96px)}
 .stars{color:var(--blue);letter-spacing:3px;padding:0 18px;font-size:1.05rem}
 .review blockquote{margin:0;padding:10px 18px 20px;font-size:1.02rem;line-height:1.5;font-weight:500}
 .review img{width:100%;flex:1;min-height:0;object-fit:cover;border-top:2px solid var(--flamingo-soft)}
+.reel-embed{width:328px;height:580px;max-width:calc(100vw - 48px);border-radius:24px;border:2px solid var(--navy);overflow:hidden;background:var(--white);box-shadow:5px 5px 0 var(--navy)}
+.reel-embed iframe{width:100%;height:100%;border:0;display:block}
 .reel-card{position:relative;width:220px;aspect-ratio:9/16;border-radius:30px;border:2px solid var(--navy);overflow:hidden;background:var(--blue);color:var(--white);text-decoration:none;box-shadow:5px 5px 0 var(--navy);display:block;transition:transform .2s}
 .reel-card:hover{transform:translateY(-4px) rotate(-1deg)}
 .reel-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -528,6 +530,8 @@ $("#drawer").addEventListener("click", function(e){
 function renderReviews(){
   var r = DATA.reviews || [];
   var reels = (DATA.reels || []).map(function(v, i){
+    var m = v.url.match(/instagram\.com\/(reel|reels|p)\/([\w-]+)/);
+    if (window.BB_EMBED && m) return '<div class="reel-embed"><iframe src="https://www.instagram.com/' + (m[1] === "p" ? "p" : "reel") + '/' + m[2] + '/embed/" loading="lazy" scrolling="no" allowtransparency="true" allow="encrypted-media" title="Instagram reel ' + (i+1) + '"></iframe></div>';
     var cov = v.cover && v.cover.indexOf("asset:") === 0 ? ASSETS[v.cover.slice(6)] : v.cover;
     return '<a class="reel-card" href="' + esc(v.url) + '" target="_blank" rel="noopener" aria-label="Watch reel ' + (i+1) + ' on Instagram">' + (cov ? '<img loading="lazy" src="' + esc(cov) + '" alt="">' : '') +
       '<span class="reel-top">' + IGICON + ' Reels</span><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>' +
