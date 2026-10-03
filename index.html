@@ -186,11 +186,12 @@ section.block{padding-block:clamp(48px,7vw,96px)}
 .ig-link{color:var(--blue);font-weight:800}
 
 /* custom CTA */
-.custom{background:var(--blue);color:var(--white);text-align:center;position:relative;overflow:hidden}
-.custom h2{color:var(--sunny);font-size:clamp(2.2rem,6vw,4.4rem)}
+.custom{background:var(--blue);color:var(--white);border-block:2px solid var(--navy)}
+.custom .wrap{display:flex;align-items:center;gap:12px 28px;flex-wrap:wrap;padding-block:22px}
+.custom h2{color:var(--sunny);font-size:clamp(1.3rem,2.6vw,1.9rem);flex:none}
 .custom h2 .it{color:var(--flamingo)}
-.custom p{max-width:50ch;margin:16px auto 26px;color:var(--beach-soft);font-size:1.08rem}
-.custom .ring{position:absolute;border-radius:50%;border:2px dashed rgba(253,241,150,.4)}
+.custom p{margin:0;color:var(--beach-soft);flex:1 1 260px;min-width:0}
+.custom .btn{flex:none;padding:11px 22px}
 
 /* footer */
 footer{background:var(--navy);color:var(--beach-soft);padding-block:56px 32px}
@@ -343,7 +344,7 @@ document.getElementById("app").innerHTML =
     '<span class="tag eyebrow">Home bakery · Delhi</span>' +
     '<h1>Sweet treats, <span class="it">baked</span> for you.</h1>' +
     '<p class="lede">Handmade brownies, brookies, cheesecakes, cake jars and more. Baked fresh to order, packed beautifully, delivered with love.</p>' +
-    '<div class="ctas"><a class="btn btn-sun" href="#menu">Explore the menu</a><a class="btn btn-line" href="' + hello + '" target="_blank" rel="noopener">Order on WhatsApp</a></div>' +
+    '<div class="ctas"><a class="btn btn-sun" href="#menu">Explore the menu</a></div>' +
     '<div class="thumbs" aria-hidden="true"><span><img src="' + ASSETS.browniesCut + '" alt=""></span><span><img src="' + ASSETS.cheesecakeCut + '" alt=""></span><span><img src="' + ASSETS.cookieTubCut + '" alt=""></span><em>&amp; lots more →</em></div>' +
   '</div>' +
   '<div class="hero-art">' +
@@ -365,27 +366,22 @@ document.getElementById("app").innerHTML =
 '</div></section>' +
 '<div class="swirl" aria-hidden="true"></div>' +
 '<section class="block menu" id="menu"><div class="wrap">' +
-  '<div class="head"><div><span class="kicker">what we bake</span><h2>Our <span class="it">menu</span></h2><p>Pick a size and flavour, add it to your cart, and send the order to us on WhatsApp.</p></div><div class="chips" id="chips" role="group" aria-label="Filter menu"></div></div>' +
+  '<div class="head"><div><span class="kicker">what we bake</span><h2>Our <span class="it">menu</span></h2><p>Pick a size and flavour, add it to your cart.</p></div><div class="chips" id="chips" role="group" aria-label="Filter menu"></div></div>' +
   '<div class="grid" id="grid"></div>' +
 '</div></section>' +
 '<section class="block reviews" id="reviews"><div class="wrap">' +
   '<div class="head"><div><h2>What others say</h2><p>Love notes our customers sent us on Instagram.</p></div><a class="btn btn-white" href="' + IG + '" target="_blank" rel="noopener">See more on Instagram</a></div>' +
   '<div class="reel" id="reviewReel"></div>' +
 '</div></section>' +
-'<section class="block custom" id="custom"><span class="ring" style="width:420px;height:420px;left:-140px;top:-160px"></span><span class="ring" style="width:300px;height:300px;right:-90px;bottom:-120px"></span><div class="wrap">' +
+'<section class="custom" id="custom"><div class="wrap">' +
   '<h2>Want something <span class="it">custom?</span></h2>' +
-  '<p>Planning a birthday, anniversary or office party? We do custom flavours, sizes and beautiful decorations. Message us and let’s make something special.</p>' +
+  '<p>Birthdays, anniversaries, office parties: custom flavours, sizes and decorations.</p>' +
   '<a class="btn btn-sun" href="' + custom + '" target="_blank" rel="noopener">Ask on WhatsApp</a>' +
 '</div></section>' +
 '</main>' +
 '<footer><div class="wrap">' +
   '<p class="word">the blissfull bites</p>' +
-  '<div class="foot-row">' +
-    '<div><span class="lbl eyebrow">Order on WhatsApp</span><b style="user-select:all">' + NUM + '</b></div>' +
-    '<div><span class="lbl eyebrow">Instagram</span><a href="' + IG + '" target="_blank" rel="noopener">@' + esc(DATA.instagram) + '</a></div>' +
-    '<div><span class="lbl eyebrow">Kitchen</span>Home bakery in Delhi</div>' +
-  '</div>' +
-  '<div class="tiny"><span>Everything is baked fresh to order.</span><a href="#admin">Admin</a></div>' +
+    '<div class="tiny"><span>Everything is baked fresh to order.</span><a href="#admin">Admin</a></div>' +
 '</div></footer>' +
 '<button class="pill cart-btn fab" id="fab" type="button" aria-label="Open your cart">Cart <span class="count" id="fabCount">0</span></button>' +
 '<div class="scrim" id="scrim"></div>' +
