@@ -1,0 +1,38 @@
+{
+  "whatsapp": "919643651810",
+  "instagram": "thee.blissfullbites",
+  "items": [
+    {"id":"brownie-box","name":"Brownie Box","cat":"Brownies","desc":"","img":"asset:brownieBox","fit":"cover","soldOut":false,
+     "options":[{"label":"Plain","price":500},{"label":"Nutella","price":550},{"label":"Oreo","price":550},{"label":"Biscoff","price":580},{"label":"Assorted","price":580}]},
+    {"id":"cookie-box","name":"Cookie Box","cat":"Cookies & muffins","desc":"","img":"asset:biscoffCookieCut","fit":"contain","soldOut":false,
+     "options":[{"label":"Choco Chip","price":350},{"label":"Butter","price":320},{"label":"Double Chocolate","price":380}]},
+    {"id":"cake-jar","name":"Cake Jar","cat":"Jars & desserts","desc":"","img":"illus:jar","fit":"contain","soldOut":false,
+     "options":[{"label":"Classic Chocolate","price":350},{"label":"Nutella Hazelnut","price":370},{"label":"Ferrero Rocher","price":390}]},
+    {"id":"cake-pops","name":"Cake Pops","cat":"Cakes","desc":"","img":"asset:heartBrownieCut","fit":"contain","soldOut":false,
+     "options":[{"label":"Classic","price":120}]},
+    {"id":"cheesecake","name":"Cheesecake","cat":"Jars & desserts","desc":"","img":"asset:cheesecakeCut","fit":"contain","soldOut":false,
+     "options":[
+      {"size":"Bento","label":"Plain","price":400},{"size":"Bento","label":"Biscoff","price":450},{"size":"Bento","label":"Nutella","price":450},{"size":"Bento","label":"Oreo","price":450},
+      {"size":"500g","label":"Plain","price":650},{"size":"500g","label":"Nutella","price":700},{"size":"500g","label":"Biscoff","price":700},{"size":"500g","label":"Brownie cheesecake","price":720},
+      {"size":"1kg","label":"Plain","price":900},{"size":"1kg","label":"Nutella","price":950},{"size":"1kg","label":"Biscoff","price":950},{"size":"1kg","label":"Brownie cheesecake","price":1000}]},
+    {"id":"tiramisu","name":"Tiramisu","cat":"Jars & desserts","desc":"500g","img":"asset:tiramisuCut","fit":"contain","soldOut":false,
+     "options":[{"label":"Classic Cocoa","price":550}]},
+    {"id":"chocolate-cake","name":"Chocolate Cake","cat":"Cakes","desc":"","img":"asset:browniesCut","fit":"contain","soldOut":false,
+     "options":[{"label":"250g","price":450},{"label":"500g","price":750},{"label":"1kg","price":1200}]},
+    {"id":"mango-jar","name":"Mango Cheesecake Jar","cat":"Jars & desserts","desc":"","img":"asset:mangoJar","fit":"cover","soldOut":false,
+     "options":[{"label":"Mango","price":380}]},
+    {"id":"brownie-bites","name":"Brownie Bites","cat":"Brownies","desc":"","img":"asset:brownieBites","fit":"cover","soldOut":false,
+     "options":[{"label":"Classic","price":280}]},
+    {"id":"brookie-tin","name":"Brookie Tin","cat":"Brownies","desc":"","img":"asset:brookieTinCut","fit":"contain","soldOut":false,
+     "options":[{"label":"Classic","price":650}]},
+    {"id":"crunchy-cake","name":"Crunchy Cake","cat":"Cakes","desc":"","img":"illus:crunchy","fit":"contain","soldOut":false,
+     "options":[{"label":"Classic","price":500}]},
+    {"id":"birthday-bento","name":"Birthday Bento Cake","cat":"Cakes","desc":"","img":"illus:bento","fit":"contain","soldOut":false,
+     "options":[{"label":"Chocolate","price":350},{"label":"Vanilla","price":350},{"label":"Strawberry","price":370}]},
+    {"id":"muffins","name":"Chocochip Muffins","cat":"Cookies & muffins","desc":"","img":"asset:muffins","fit":"cover","soldOut":false,
+     "options":[{"label":"Classic","price":280}]},
+    {"id":"tea-cake","name":"Tea Cake","cat":"Cakes","desc":"","img":"illus:loaf","fit":"contain","soldOut":false,
+     "options":[{"label":"250g","price":320},{"label":"500g","price":550},{"label":"1kg","price":950}]}
+  ],
+  "reviews": []
+}
