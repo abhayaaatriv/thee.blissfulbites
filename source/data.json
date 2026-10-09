@@ -31,7 +31,8 @@
      "label": "Assorted",
      "price": 650
     }
-   ]
+   ],
+   "fav": true
   },
   {
    "id": "cookie-box",
@@ -56,7 +57,8 @@
      "price": 450,
      "img": "asset:doubleChocCookie"
     }
-   ]
+   ],
+   "fav": true
   },
   {
    "id": "cake-jar",
@@ -79,13 +81,14 @@
      "label": "Ferrero Rocher",
      "price": 390
     }
-   ]
+   ],
+   "fav": false
   },
   {
    "id": "cake-pops",
    "name": "Cake Pops",
    "cat": "Cakes",
-   "desc": "",
+   "desc": "1 piece",
    "img": "asset:cakePops",
    "fit": "cover",
    "soldOut": false,
@@ -94,7 +97,8 @@
      "label": "Classic",
      "price": 120
     }
-   ]
+   ],
+   "fav": false
   },
   {
    "id": "cheesecake",
@@ -108,37 +112,44 @@
     {
      "size": "Bento",
      "label": "Plain",
-     "price": 400
+     "price": 400,
+     "img": "asset:ccPlain"
     },
     {
      "size": "Bento",
      "label": "Biscoff",
-     "price": 450
+     "price": 450,
+     "img": "asset:ccBiscoff"
     },
     {
      "size": "Bento",
      "label": "Nutella",
-     "price": 450
+     "price": 450,
+     "img": "asset:ccNutella"
     },
     {
      "size": "Bento",
      "label": "Oreo",
-     "price": 450
+     "price": 450,
+     "img": "asset:ccNutella"
     },
     {
      "size": "500g",
      "label": "Plain",
-     "price": 650
+     "price": 650,
+     "img": "asset:ccPlain"
     },
     {
      "size": "500g",
      "label": "Nutella",
-     "price": 700
+     "price": 700,
+     "img": "asset:ccNutella"
     },
     {
      "size": "500g",
      "label": "Biscoff",
-     "price": 700
+     "price": 700,
+     "img": "asset:ccBiscoff"
     },
     {
      "size": "500g",
@@ -148,24 +159,28 @@
     {
      "size": "1kg",
      "label": "Plain",
-     "price": 900
+     "price": 900,
+     "img": "asset:ccPlain"
     },
     {
      "size": "1kg",
      "label": "Nutella",
-     "price": 950
+     "price": 950,
+     "img": "asset:ccNutella"
     },
     {
      "size": "1kg",
      "label": "Biscoff",
-     "price": 950
+     "price": 950,
+     "img": "asset:ccBiscoff"
     },
     {
      "size": "1kg",
      "label": "Brownie cheesecake",
      "price": 1000
     }
-   ]
+   ],
+   "fav": false
   },
   {
    "id": "tiramisu",
@@ -180,7 +195,8 @@
      "label": "Classic Cocoa",
      "price": 700
     }
-   ]
+   ],
+   "fav": true
   },
   {
    "id": "chocolate-cake",
@@ -199,7 +215,8 @@
      "label": "1kg",
      "price": 1200
     }
-   ]
+   ],
+   "fav": false
   },
   {
    "id": "mango-jar",
@@ -214,7 +231,8 @@
      "label": "Mango",
      "price": 380
     }
-   ]
+   ],
+   "fav": false
   },
   {
    "id": "brownie-bites",
@@ -229,22 +247,24 @@
      "label": "Classic",
      "price": 500
     }
-   ]
+   ],
+   "fav": false
   },
   {
    "id": "cookie-tin",
    "name": "Cookie Tin",
    "cat": "Cookies & muffins",
    "desc": "",
-   "img": "asset:brookieTinCut",
-   "fit": "contain",
+   "img": "asset:cookieTin",
+   "fit": "cover",
    "soldOut": false,
    "options": [
     {
      "label": "Classic",
      "price": 900
     }
-   ]
+   ],
+   "fav": true
   },
   {
    "id": "crunchy-cookie-tin",
@@ -259,7 +279,8 @@
      "label": "Classic",
      "price": 950
     }
-   ]
+   ],
+   "fav": true
   },
   {
    "id": "brookie-tin",
@@ -274,7 +295,8 @@
      "label": "Classic",
      "price": 650
     }
-   ]
+   ],
+   "fav": false
   },
   {
    "id": "choc-overload-brownie-tin",
@@ -289,7 +311,8 @@
      "label": "Classic",
      "price": 1000
     }
-   ]
+   ],
+   "fav": true
   },
   {
    "id": "crunchy-cake",
@@ -304,7 +327,8 @@
      "label": "Classic",
      "price": 800
     }
-   ]
+   ],
+   "fav": false
   },
   {
    "id": "bento-lotus-biscoff",
@@ -319,45 +343,24 @@
      "label": "Classic",
      "price": 480
     }
-   ]
+   ],
+   "fav": false
   },
   {
    "id": "muffins",
    "name": "Chocochip Muffins",
    "cat": "Cookies & muffins",
-   "desc": "",
+   "desc": "Box of 6",
    "img": "asset:muffins",
    "fit": "cover",
    "soldOut": false,
    "options": [
     {
      "label": "Classic",
-     "price": 280
+     "price": 300
     }
-   ]
-  },
-  {
-   "id": "tea-cake",
-   "name": "Tea Cake",
-   "cat": "Cakes",
-   "desc": "",
-   "img": "illus:loaf",
-   "fit": "contain",
-   "soldOut": false,
-   "options": [
-    {
-     "label": "250g",
-     "price": 320
-    },
-    {
-     "label": "500g",
-     "price": 550
-    },
-    {
-     "label": "1kg",
-     "price": 950
-    }
-   ]
+   ],
+   "fav": false
   }
  ],
  "reviews": [],
